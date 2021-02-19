@@ -35,7 +35,7 @@ if m<n X=X'; end
 L=X;
 S=sparse(zeros(size(X)));
 
-tic;
+%tic;
 while true
 
     %Update of L
@@ -64,7 +64,7 @@ while true
     iter=iter+1;
     
 end
-toc;
+%toc;
 
 LS=L+S;
 %error=norm(LS(:)-X(:))/norm(X(:));
